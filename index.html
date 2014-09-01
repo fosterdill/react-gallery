@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="lib/masonry.js"></script>
+  <script src="lib/jquery.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/backbone.js"></script>
+  <script src="lib/react.js"></script>
+  <script src="lib/transformer.js"></script>
+  <script src="src/assets.js"></script>
+  <script type="text/jsx" src="src/tile.jsx"></script>
+  <script type="text/jsx" src="src/lightbox.jsx"></script>
+  <script type="text/jsx" src="src/wall.jsx"></script>
+  <link rel="stylesheet" type="text/css" href="src/styles.css">
+</head>
+  <body>
+    <script type="text/jsx">
+      /** @jsx React.DOM */
+      React.renderComponent(
+        <Wall />,
+        document.querySelector("body")
+      );
+    </script>
+  </body>
+</html>
